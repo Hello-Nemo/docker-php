@@ -57,5 +57,5 @@ WORKDIR /web
 RUN usermod -u 1000 www-data
 
 # php-fpm:8000 xdebug:9000
-EXPOSE 8001 
+EXPOSE 8000 
 VOLUME ["/web"]

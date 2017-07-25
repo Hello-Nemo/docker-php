@@ -10,7 +10,7 @@ nginx:
 php:
   build: ./php
   ports:
-    - "8001:8001"
+    - "8000:8000"
   links:
     - "mysql"
     - "redis"
