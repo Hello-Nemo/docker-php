@@ -23,7 +23,7 @@ php:
 mysql:
   build: ./mysql
   ports:
-    - "10.10.48.190:3306:3306"
+    - "3306:3306"
   volumes:
     - ~/web/data/mysql:/var/lib/mysql
   environment:
@@ -32,9 +32,9 @@ mysql:
 redis:
   build: ./redis
   ports:
-    - "10.10.48.190:6379:6379"
+    - "6379:6379"
 
 memcached:
   build: ./memcached
   ports:
-    - "10.10.48.190:11211:11211" 
+    - "11211:11211" 
