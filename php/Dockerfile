@@ -25,7 +25,8 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
         && docker-php-ext-install bcmath \
         && docker-php-ext-install mcrypt \
         && docker-php-ext-install mysqli \
-        && docker-php-ext-install pdo_mysql
+        && docker-php-ext-install pdo_mysql \
+        && docker-php-ext-install soap 
 
 		
 # PHP config
